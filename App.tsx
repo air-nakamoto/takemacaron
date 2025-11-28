@@ -7,6 +7,7 @@ import { ExpenseList } from './components/ExpenseList';
 import { ArchiveList } from './components/ArchiveList';
 import { FixedCostModal } from './components/FixedCostModal';
 import { BudgetSettingsModal } from './components/BudgetSettingsModal';
+import { LoginButton } from './components/LoginButton';
 import { Plus, History, Settings, CreditCard } from 'lucide-react';
 
 function App() {
@@ -366,6 +367,7 @@ function App() {
           </h1>
 
           <div className="flex items-center gap-2">
+            <LoginButton />
             <button
               onClick={() => setShowBudgetSettings(true)}
               className="p-3 bg-white text-slate-400 hover:text-rose-400 rounded-full shadow-sm border border-slate-100 transition-all"
